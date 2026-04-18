@@ -1,4 +1,5 @@
-import { Statistics, StatisticsError } from "./statistics";
+// import { Statistics, StatisticsError } from "./statistics";
+import { Statistics, StatisticsError } from "./statistics.js";
 try {
     const stats = new Statistics([1.5, 2.5, 3.5]);
     console.log(`Mean: ${stats.mean()}`);

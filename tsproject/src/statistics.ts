@@ -5,7 +5,7 @@ export class StatisticsError extends Error {
     }
 }
 export class Statistics {
-    private numbers: number[];
+    private readonly numbers: number[];
     constructor(nums: number[]) {
         if (nums.length === 0) throw new StatisticsError("Empty number list");
         if (nums.some(n => !isFinite(n))) throw new StatisticsError("Non-finite number");
