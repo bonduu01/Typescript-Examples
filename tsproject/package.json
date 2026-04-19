@@ -7,11 +7,13 @@
     "test": "tests"
   },
   "devDependencies": {
-    "@types/jest": "^30.0.0"
+    "@types/jest": "^30.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
   },
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/main.ts",
+    "start": "node --loader ts-node/esm ./src/main.ts",
     "test": "jest"
   },
   "keywords": [],
