@@ -1,23 +1,17 @@
 {
   "name": "tsproject",
   "version": "1.0.0",
-  "description": "",
-  "main": "jest.config.js",
-  "directories": {
-    "test": "tests"
-  },
-  "devDependencies": {
-    "@types/jest": "^30.0.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^6.0.3"
-  },
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "node --loader ts-node/esm ./src/main.ts",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module"
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.9",
+    "@types/jest": "^29.5.12",
+    "typescript": "^6.0.3",
+    "ts-node": "^10.9.2"
+  }
 }
